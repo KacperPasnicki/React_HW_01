@@ -1,0 +1,45 @@
+.statistics{
+   margin-top: 25px;
+   background-color: blanchedalmond;
+    
+    height: 350px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+}
+.statList{
+    display: flex;
+}
+.listElemet{
+    border-radius: 5px;
+    width: 75px;
+    display: block;
+    text-align: center;
+    padding: 20px 7px;
+    background-color: aliceblue;
+}
+.statList{
+    /* justify-content: space-evenly; */
+   
+    
+}
+.title{
+    padding: 25px;
+    background-color:azure;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px orange;
+}
+.listElemet:first-child {
+    background-color: aqua;
+}
+.listElemet:nth-child(2){
+background-color: yellowgreen;
+}
+.listElemet:nth-child(3){
+    background-color: blueviolet;
+    
+}
+.listElemet:nth-child(4){
+    background-color: gold;
+}
