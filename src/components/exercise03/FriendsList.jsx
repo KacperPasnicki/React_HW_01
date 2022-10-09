@@ -37,57 +37,24 @@ export const friends =
 
 
 export const FriendsList = ({friends}) => {
+    
+    
     const FriendsRender = friends.map(friend =>
         {
             return(
-            <li class = {FriendsListCss.listElement} key={friend.id}>
-                <span class = {FriendsListCss.status}> X </span>
-                <span class = {FriendsListCss.status}>{friend.status}</span>
-                <img class={FriendsListCss.avatar} src={friend.avatar} alt="User avatar" width="48" />
-                <p class={FriendsListCss.name}>{friend.name}</p>
+                <li class = {FriendsListCss.listElement} key={friend.id}>
+                    <span className = {friend.isOnline  ? FriendsListCss.statusGreen : FriendsListCss.statusRed } > &bull; </span>
+                    
+                    <img class={FriendsListCss.avatar} src={friend.avatar} alt="User avatar" width="48" />
+                    <p class={FriendsListCss.name}>{friend.name}</p>
                 
                 </li>
                 
                 )
-                
-
-            
-
-
-        }
-        
-        )
+             }
+                )
         return(<ul class={FriendsListCss.friendList}>{FriendsRender}</ul>)
        
-            
-             
-             
-             
-    
-
-}
-
-
-            
-
-
-// export const Statistics = ({title = null, stats}) => {
-    
-      
-//     const dataList = stats.map(data => {
-//      return(
-//         <li class = {StatisticsCSS.listElemet} key={data.id}>
-//           <span class = {StatisticsCSS.listLabel}>{data.label}</span>
-//           <span>{data.percentage}%</span>
-//           </li>)
-//     });return(
+     }
      
-//       <section class={StatisticsCSS.statistics}>
-//        <h2 class={StatisticsCSS.title}>{title}</h2>
-//        <ul class={StatisticsCSS.statList}>{dataList}</ul>
-//        </section>
-   
-      
-//       )
-
-// };
+    
