@@ -18,7 +18,8 @@ export const Data = [
             <span class = {StatisticsCSS.listLabel}>{data.label}</span>
             <span>{data.percentage}%</span>
             </li>)
-      });return(
+      });
+      return(
        
         <section class={StatisticsCSS.statistics}>
          <h2 class={StatisticsCSS.title}>{title}</h2>
@@ -30,29 +31,5 @@ export const Data = [
   
   };
   
-
-// export const Statistics = () =>
-// <section class="statistics">
-// <h2 class="title">Upload stats</h2>
-
-// <ul class="stat-list">
-//   <li class="item">
-//     <span class="label">DataList data={Data.label}</span>
-//     <span class="percentage">{DataList.percentage}</span>
-//   </li>
-//   <li class="item">
-//     <span class="label">.{Data.label}</span>
-//     <span class="percentage">{Data.percentage}</span>
-//   </li>
-//   <li class="item">
-//     <span class="label">{Data.label}</span>
-//     <span class="percentage">{Data.percentage}</span>
-//   </li>
-//   <li class="item">
-//     <span class="label">{Data.label}</span>
-//     <span class="percentage">{Data.percentage}</span>
-//   </li>
-// </ul>
-// </section>
 
 
