@@ -27,11 +27,11 @@ export const UserData =
   </div>
 
   <ul class={ProfileCss.stats}>
-    <li class={ProfileCss.liDotes}>
+    <li class={ProfileCss.s}>
       <span class={ProfileCss.label}>Followers</span>
       <span class={ProfileCss.quantity}>{UserData.stats.followers}</span>
     </li>
-    <li class={ProfileCss.liDotes}>
+    <li>
       <span class={ProfileCss.label}>Views</span>
       <span class={ProfileCss.quantity}>{UserData.stats.views}</span>
     </li>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import './index.css';
 import { Profile, UserData } from './components/exercise01/Profile';
+
 import {Data, Statistics} from './components/exercise02/Statistics';
 import {FriendsList, friends} from './components/exercise03/FriendsList'
 import transactions from './components/exercise04/Transactions.json'

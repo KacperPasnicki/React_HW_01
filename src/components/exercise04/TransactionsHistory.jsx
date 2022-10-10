@@ -8,19 +8,28 @@ export const TransactionsHistory = ({items}) => {
         {
             return(
                 
-                    <thead class={ItemsCss.ArrayElement}key={item.id}>
-                        <tr  >
-                        <th class = {ItemsCss.type} > {item.type} </th>
-                        
-                        <th class={ItemsCss.avatar}> {item.amount}  </th>
-                        <th class={ItemsCss.currency}>{item.currency}</th>
+                   <tbody class={ItemsCss.elements} key={item.id}>
+                        <tr class= {ItemsCss.zebra}>
+                            <td class={ItemsCss.element}> {item.type} </td>
+                            <td class={ItemsCss.element}> {item.amount}  </td>
+                            <td class={ItemsCss.element}>{item.currency}</td>
                         </tr>
-                    </thead>
+
+                    </tbody>
                    )
                 }
              )
-        return(<table class={ItemsCss.ItemsArray}>{ItemsRender}</table>)
+        return(<table class={ItemsCss.ItemsArray}> 
+                 <thead class={ItemsCss.ArrayElement} >
+                    <tr >
+                        <th class={ItemsCss.caption}>TYPE</th>
+                        <th class={ItemsCss.caption}>AMOUNT</th>
+                        <th class={ItemsCss.caption}>CURRENCY</th>
+                    </tr>
+                 </thead>{ItemsRender}
+                </table>)
        
      }
 
 
+   

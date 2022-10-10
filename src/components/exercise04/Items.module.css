@@ -1,6 +1,31 @@
 .ItemsArray{
-    display: flex;
+   margin-top: 25px;
+        width: 40%;
+        
+        border-collapse:separate;
+        background-color: blanchedalmond;
+        box-shadow: 5px 5px 10px;
+        border-radius: 5px;
+      
 }
-.ArrayElement{
-    display: flex;
+.elements{
+    justify-content: space-around;
 }
+.caption{
+    box-shadow: 5px 5px 10px orange;
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 2px;
+    background-color: aliceblue;
+
+}
+.element {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.elements:nth-child(even) {
+        background-color: burlywood;
+       
+      }
+
