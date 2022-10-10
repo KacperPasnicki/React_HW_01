@@ -1,4 +1,5 @@
 import ProfileCss from './Profile.module.css'
+import PropTypes from 'prop-types';
 
 export const UserData = 
 ({
