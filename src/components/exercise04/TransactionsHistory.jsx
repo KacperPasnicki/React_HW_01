@@ -32,4 +32,10 @@ export const TransactionsHistory = ({items}) => {
      }
 
 
-   
+     TransactionsHistory.propTypes = {
+       
+        type: PropTypes.string.isRequired,
+        amount: PropTypes.number.isRequired,
+        currency: PropTypes.string.isRequired,
+    
+    }
