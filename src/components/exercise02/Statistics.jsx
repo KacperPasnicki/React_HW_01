@@ -8,16 +8,16 @@ import PropTypes from 'prop-types';
       
       const dataList = stats.map(data => {
        return(
-          <li class = {StatisticsCSS.listElemet} key={data.id}>
-            <span class = {StatisticsCSS.listLabel}>{data.label}</span>
+          <li className = {StatisticsCSS.listElemet} key={data.id}>
+            <span className = {StatisticsCSS.listLabel}>{data.label}</span>
             <span>{data.percentage}%</span>
             </li>)
       });
       return(
        
-        <section class={StatisticsCSS.statistics}>
-         <h2 class={StatisticsCSS.title}>{title}</h2>
-         <ul class={StatisticsCSS.statList}>{dataList}</ul>
+        <section className={StatisticsCSS.statistics}>
+         <h2 className={StatisticsCSS.title}>{title}</h2>
+         <ul className={StatisticsCSS.statList}>{dataList}</ul>
          </section>
      
         
@@ -27,6 +27,6 @@ import PropTypes from 'prop-types';
   
 
   Statistics.propTypes = {
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    stats: PropTypes.any.isRequired,
 }

@@ -13,24 +13,24 @@ export const FriendsList = ({friends}) => {
     const FriendsRender = friends.map(friend =>
         {
             return(
-                <li class = {FriendsListCss.listElement} key={friend.id}>
+                <li className = {FriendsListCss.listElement} key={friend.id}>
                     <span className = {friend.isOnline  ? FriendsListCss.statusGreen : FriendsListCss.statusRed } > &bull; </span>
                     
-                    <img class={FriendsListCss.avatar} src={friend.avatar} alt="User avatar" width="48" />
-                    <p class={FriendsListCss.name}>{friend.name}</p>
+                    <img className={FriendsListCss.avatar} src={friend.avatar} alt="User avatar" width="48" />
+                    <p className={FriendsListCss.name}>{friend.name}</p>
                 
                 </li>
                 
                 )
              }
                 )
-        return(<ul class={FriendsListCss.friendList}>{FriendsRender}</ul>)
+        return(<ul className={FriendsListCss.friendList}>{FriendsRender}</ul>)
        
      }
      
     
      FriendsList.propTypes = {
-        name: PropTypes.string.isRequired,
-        isOnline: PropTypes.bool.isRequired,
+        friends: PropTypes.array.isRequired,
+       
        
     }

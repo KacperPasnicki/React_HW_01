@@ -13,14 +13,16 @@ import {TransactionsHistory} from  './components/exercise04/TransactionsHistory'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+   
     <Profile username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}/>
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats}/>
     <Statistics title="Upload stats" stats={data} />
     <FriendsList friends={friends} />
     <TransactionsHistory items={transactions} />
+    
   </React.StrictMode>
 );
 

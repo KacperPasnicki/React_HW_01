@@ -22,26 +22,26 @@ import PropTypes from 'prop-types';
        [ 2, 'views', stats.views],
        [ 3, 'likes', stats.likes],
       ].map(([id, string, value])=>{
-        return (<li key={id} class={ProfileCss.s}>
-          <span class={ProfileCss.label}>{string}</span>
-          <span class={ProfileCss.quantity}>{value}</span>
+        return (<li key={id} className={ProfileCss.s}>
+          <span className={ProfileCss.label}>{string}</span>
+          <span className={ProfileCss.quantity}>{value}</span>
         </li>)
 
 
       })
 
-return(<div class={ProfileCss.profile}>
-  <div class={ProfileCss.description}>
+return(<div className={ProfileCss.profile}>
+  <div className={ProfileCss.description}>
     <img
       src={avatar}
       alt="User avatar"
-      class={ProfileCss.img}
+      className={ProfileCss.img}
       width="140"/>
-    <p class={ProfileCss.username}>{username}</p>
-    <p class={ProfileCss.tag}>{tag}</p>
-    <p class={ProfileCss.location}>{location}</p>
+    <p className={ProfileCss.username}>{username}</p>
+    <p className={ProfileCss.tag}>{tag}</p>
+    <p className={ProfileCss.location}>{location}</p>
   </div>
-      <ul class={ProfileCss.stats}>{ProfileList}</ul>
+      <ul className={ProfileCss.stats}>{ProfileList}</ul>
 </div>
 ) }
 

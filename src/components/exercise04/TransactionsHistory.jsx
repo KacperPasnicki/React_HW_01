@@ -8,23 +8,23 @@ export const TransactionsHistory = ({items}) => {
         {
             return(
                 
-                   <tbody class={ItemsCss.elements} key={item.id}>
-                        <tr class= {ItemsCss.zebra}>
-                            <td class={ItemsCss.element}> {item.type} </td>
-                            <td class={ItemsCss.element}> {item.amount}  </td>
-                            <td class={ItemsCss.element}>{item.currency}</td>
+                   <tbody className={ItemsCss.elements} key={item.id}>
+                        <tr className= {ItemsCss.zebra}>
+                            <td className={ItemsCss.element}> {item.type} </td>
+                            <td className={ItemsCss.element}> {item.amount}  </td>
+                            <td className={ItemsCss.element}>{item.currency}</td>
                         </tr>
 
                     </tbody>
                    )
                 }
              )
-        return(<table class={ItemsCss.ItemsArray}> 
-                 <thead class={ItemsCss.ArrayElement} >
+        return(<table className={ItemsCss.ItemsArray}> 
+                 <thead className={ItemsCss.ArrayElement} >
                     <tr >
-                        <th class={ItemsCss.caption}>TYPE</th>
-                        <th class={ItemsCss.caption}>AMOUNT</th>
-                        <th class={ItemsCss.caption}>CURRENCY</th>
+                        <th className={ItemsCss.caption}>TYPE</th>
+                        <th className={ItemsCss.caption}>AMOUNT</th>
+                        <th className={ItemsCss.caption}>CURRENCY</th>
                     </tr>
                  </thead>{ItemsRender}
                 </table>)
@@ -34,8 +34,6 @@ export const TransactionsHistory = ({items}) => {
 
      TransactionsHistory.propTypes = {
        
-        type: PropTypes.string.isRequired,
-        amount: PropTypes.number.isRequired,
-        currency: PropTypes.string.isRequired,
-    
+        items: PropTypes.array.isRequired,
+     
     }
