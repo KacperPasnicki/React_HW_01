@@ -13,7 +13,7 @@ import {TransactionsHistory} from  './components/exercise04/TransactionsHistory'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   
+   <App>
     <Profile username={user.username}
       tag={user.tag}
       location={user.location}
@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Statistics title="Upload stats" stats={data} />
     <FriendsList friends={friends} />
     <TransactionsHistory items={transactions} />
-    
+    </App> 
   </React.StrictMode>
 );
 

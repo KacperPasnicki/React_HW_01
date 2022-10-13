@@ -4,16 +4,18 @@ export const App = ({children}) => {
   return (
     <div
       style={{
-        height: '100vh',
+        height: '100%',
         display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
+        flexWrap: 'wrap',
         color: '#010101',
-        opacity: 0.1
+        padding: '50px 10px',
+        justifyContent: 'space-around'
+       
+
+        
       }}
     >
-      React homework template
+     
       {children}
     </div>
   );
@@ -25,3 +27,4 @@ export const App = ({children}) => {
 
 
 // };
+
