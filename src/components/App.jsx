@@ -21,10 +21,10 @@ export const App = ({children}) => {
   );
     }
 
-// App.propTypes = {
+App.propTypes = {
 
-//   HW: PropTypes.array.isRequired,
+  HW: PropTypes.array.isRequired,
 
 
-// };
+};
 
